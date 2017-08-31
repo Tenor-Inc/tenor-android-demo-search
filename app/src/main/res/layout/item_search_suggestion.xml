@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_search_suggestion_shadow">
+
+    <!--suppress AndroidUnknownAttribute -->
+    <TextView
+        android:id="@+id/ips_tv_title"
+        fontPath="fonts/Lato-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/search_suggestion_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:minHeight="@dimen/search_suggestion_item_height"
+        android:minLines="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/search_suggestion_item_text_size"
+        tools:ignore="MissingPrefix"
+        tools:text="search suggestion is working"
+        tools:textColor="@color/tenor_sdk_primary_color" />
+</FrameLayout>

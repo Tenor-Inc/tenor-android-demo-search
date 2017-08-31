@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="AppTheme.SelectableItemBackground">
+        <item name="android:theme">@style/AppTheme.SelectableItemRippleTheme</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="AppTheme.ExpandedSearchBarStyle" parent="AppTheme">
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="HorizontalLinearProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/tenor_sdk_primary_dark_color</item>
+        <item name="android:progressBackgroundTint">@color/tenor_sdk_primary_color</item>
+    </style>
+</resources>

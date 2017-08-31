@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.tenor.android.demo.search.activity.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/as_ll_search_box_expanded"
+        style="@style/AppTheme.ExpandedSearchBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/expanded_search_bar_height"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/as_ib_back"
+            style="@style/AppTheme.SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:contentDescription="@string/action_menu_back_from_search"
+            android:minWidth="@dimen/expanded_search_bar_height"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/tenor_sdk_primary_color" />
+
+        <TextView
+            android:id="@+id/as_tv_query"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="@string/tenor_sdk_search_hint"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@drawable/ic_tenor_cursor"
+            android:textSize="@dimen/sbe_search_box_expanded_text_size" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/as_rv_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ans_ll_search_box_expanded" />
+</LinearLayout>

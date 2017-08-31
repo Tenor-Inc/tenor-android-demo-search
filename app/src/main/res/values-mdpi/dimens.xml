@@ -1,0 +1,12 @@
+<resources>
+    <!-- screen density 1 -->
+
+    <!-- Search Suggestion Item -->
+    <dimen name="search_suggestion_item_height">36dp</dimen>
+
+    <!-- Search View and Expanded Search View -->
+    <dimen name="sbe_search_box_expanded_text_size">16sp</dimen>
+    <dimen name="sbr_search_box_collapsed_text_size">14sp</dimen>
+
+    <dimen name="reaction_item_text_size">16sp</dimen>
+</resources>

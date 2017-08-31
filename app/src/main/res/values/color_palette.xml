@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="color_palette">
+        <item>@color/color_palette_green</item>
+        <item>@color/color_palette_light_blue</item>
+        <item>@color/color_palette_yellow</item>
+        <item>@color/color_palette_deep_purple</item>
+        <item>@color/color_palette_red</item>
+    </integer-array>
+
+    <color name="color_palette_green">#8BB38B</color>
+    <color name="color_palette_light_blue">#8BB3B3</color>
+    <color name="color_palette_yellow">#B3B38B</color>
+    <color name="color_palette_deep_purple">#8B8BB3</color>
+    <color name="color_palette_red">#B38B8B</color>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <!-- screen density 3 -->
+    <!-- Search Suggestion Item -->
+    <dimen name="search_suggestion_item_height">48dp</dimen>
+
+    <dimen name="reaction_item_text_size">18sp</dimen>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/gdi_iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:selectableItemBackground"
+        android:scaleType="fitXY"
+        tools:src="@drawable/ic_logo_white"
+        tools:tint="@color/tenor_sdk_primary_color" />
+
+    <ProgressBar
+        android:id="@+id/gdi_pb_loading"
+        style="?android:attr/indeterminateProgressStyle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/gdi_v_audio"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/ic_volume_up_white_24dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/gdi_v_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        tools:src="@drawable/ic_logo_white"
+        tools:tint="@color/tenor_sdk_primary_color"
+        tools:visibility="visible" />
+</FrameLayout>

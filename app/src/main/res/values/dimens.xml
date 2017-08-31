@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Search Suggestion Item -->
+    <dimen name="expanded_search_bar_height">56dp</dimen>
+
+    <!-- Search View and Expanded Search View -->
+    <dimen name="search_suggestion_item_text_size">14sp</dimen>
+    <dimen name="search_suggestion_item_height">56dp</dimen>
+
+    <dimen name="reaction_item_text_size">20sp</dimen>
+</resources>
