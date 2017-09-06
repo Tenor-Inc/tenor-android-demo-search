@@ -28,6 +28,7 @@ Once you have your response, we will need to load the tags into our view.  We re
 
 The demo displays the [TagItemVH][tagitemvh] through the [TagsAdapter][tagsadapter].  When the [TagItemVH][tagitemvh] is clicked, a tag will open a [SearchActivity][searchactivity], passing the tag name through `SearchActivity.KEY_QUERY`.
 
+![alt text](https://imgur.com/U8DqnP7.png)
 
 ## Typed Search
 Using the EditText inside our [MainActivity][mainactivity], we open the [SearchActivity][searchactivity] with `EditorInfo.IME_ACTION_SEARCH`. Like tags, the query is passed to [SearchActivity][searchactivity] via `SearchActivity.KEY_QUERY`.  
@@ -40,6 +41,7 @@ Like Tags, we will load the results returned through the API response into Image
 They will also be loaded using the `GlideTaskParams`.
 The demo displays the [GifSearchItemVH][gifitemvh] through the [GifSearchAdapter][searchadapter].  For the demo, no full click functionality has been added.  How you wish to handle click events with GIFs is up to you.
 
+![alt text](https://imgur.com/h9vMPsB.png)
 
 ## Suggestions (Optional)
 An additional feature the demo uses in [SearchActivity][searchactivity] is to take the search query from `SearchActivity.KEY_QUERY` and call the `getSearchSuggestionsEndpoint()` in the [SearchSuggestionPresenter][suggestionpresenter].  It returns a search suggestion response (see [here](https://tenor.com/gifapi#suggestions)) and is displayed in the [SearchSuggestionAdapter][searchsuggestionadapter].
@@ -47,6 +49,8 @@ An additional feature the demo uses in [SearchActivity][searchactivity] is to ta
 The adapter, and its view holder [SearchSuggestionVH][suggestionitemvh] are displayed as the top level element of the [GifSearchAdapter][searchadapter].  Clicking them will open a new instance of [SearchActivity][searchactivity].
 
 Suggestions are a useful tool in the Tenor API to refine searches.  We recommend using them for a more full GIF search experience.
+
+![alt text](https://imgur.com/iQmug1M.png)
 
 [mainactivity]: app/src/main/java/com/tenor/android/demo/search/activity/MainActivity.java
 [mainpresenter]: app/src/main/java/com/tenor/android/demo/search/presenter/impl/MainPresenter.java
